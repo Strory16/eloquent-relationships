@@ -1,17 +1,18 @@
 <?php
 
-namespace App\Http\Controllers;
+// Mendefinisikan namespace untuk UserController, mengorganisir kode dalam aplikasi.
+namespace App\Http\Controllers; 
 
-use App\Models\User;
+use App\Models\User; // Mengimpor model User untuk berinteraksi dengan tabel 'users' di database.
 
-class UserController extends Controller
+class UserController extends Controller // Mendeklarasikan kelas UserController yang memperluas kelas Controller.
 {    
     /**
      * index
      *
      * @return void
      */
-    public function index()
+    public function index() // Mendefinisikan metode index untuk menangani permintaan menampilkan semua pengguna.
     {
         //get users form Model
         $users = User::latest()->get();
