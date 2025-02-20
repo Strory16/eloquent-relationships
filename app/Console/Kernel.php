@@ -14,25 +14,28 @@ class Kernel extends ConsoleKernel
 
 {
     /**
-     * Define the application's command schedule.
-     *
-     * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
-     * @return void
-     */
-    protected function schedule(Schedule $schedule)
-    {
-        // $schedule->command('inspire')->hourly();
-    }
+ * Define the application's command schedule.
+ *
+ * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
+ * @return void
+ */
+protected function schedule(Schedule $schedule)
+{
+    // Menjadwalkan perintah 'inspire' untuk dijalankan setiap jam.
+    // $schedule->command('inspire')->hourly();
+}
 
-    /**
-     * Register the commands for the application.
-     *
-     * @return void
-     */
-    protected function commands()
-    {
-        $this->load(__DIR__.'/Commands');
+/**
+ * Register the commands for the application.
+ *
+ * @return void
+ */
+protected function commands()
+{
+    // Memuat semua perintah yang ada di direktori 'Commands'.
+    $this->load(__DIR__.'/Commands');
 
-        require base_path ('routes/console.php');
-    }
+    // Memuat rute-rute konsol yang didefinisikan dalam file 'console.php'.
+    require base_path('routes/console.php');
+}
 }
