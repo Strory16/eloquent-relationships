@@ -2,10 +2,10 @@
 
 // Mendefinisikan namespace untuk UserController, mengorganisir kode dalam aplikasi.
 namespace App\Http\Controllers; 
-
-use App\Models\User; // Mengimpor model User untuk berinteraksi dengan tabel 'users' di database.
-
-class UserController extends Controller // Mendeklarasikan kelas UserController yang memperluas kelas Controller.
+// Mengimpor model User untuk berinteraksi dengan tabel 'users' di database.
+use App\Models\User; 
+// Mendeklarasikan kelas UserController yang memperluas kelas Controller.
+class UserController extends Controller 
 {    
     /**
      * index
