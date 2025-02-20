@@ -50,11 +50,13 @@ class Handler extends ExceptionHandler
      * @return void
      */
     public function register()
+
     {
-    // Mendaftarkan callback untuk menangani pengecualian yang dapat dilaporkan.
-    $this->reportable(function (Throwable $e) {
-        // Di sini Anda dapat menambahkan logika untuk menangani pengecualian yang dilaporkan.
-        // Misalnya, Anda dapat mencatat pengecualian atau mengirimnya ke layanan pemantauan.
-    });
-}
+        // Mendaftarkan callback untuk menangani pengecualian yang dapat dilaporkan.
+        $this->reportable(function (Throwable $e) {
+            // Di sini Anda dapat menambahkan logika untuk menangani pengecualian yang dilaporkan.
+            // Misalnya, Anda dapat mencatat pengecualian atau mengirimnya ke layanan pemantauan.
+        });
+    }
+
 }
