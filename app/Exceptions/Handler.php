@@ -19,7 +19,8 @@ class Handler extends ExceptionHandler
      * @var array<class-string<\Throwable>, \Psr\Log\LogLevel::*>
      */
     protected $levels = [
-        //
+        // Daftar ini akan berisi jenis pengecualian dan tingkat log kustom yang sesuai.
+        // Misalnya, Anda dapat menentukan bahwa pengecualian tertentu harus dicatat dengan tingkat log 'error' atau 'critical'.
     ];
 
     /**
@@ -28,18 +29,19 @@ class Handler extends ExceptionHandler
      * @var array<int, class-string<\Throwable>>
      */
     protected $dontReport = [
-        //
+        // Daftar ini akan berisi jenis pengecualian yang tidak akan dilaporkan.
+        // Misalnya, Anda mungkin ingin mengecualikan pengecualian tertentu dari pencatatan untuk menghindari kebisingan di log.
     ];
 
-    /**
+        /**
      * A list of the inputs that are never flashed to the session on validation exceptions.
      *
      * @var array<int, string>
      */
     protected $dontFlash = [
-        'current_password',
-        'password',
-        'password_confirmation',
+        'current_password', // Input ini tidak akan disimpan dalam sesi ketika terjadi pengecualian validasi.
+        'password',         // Input ini juga tidak akan disimpan dalam sesi untuk alasan keamanan.
+        'password_confirmation', // Input konfirmasi password tidak akan disimpan dalam sesi.
     ];
 
     /**
@@ -49,8 +51,10 @@ class Handler extends ExceptionHandler
      */
     public function register()
     {
-        $this->reportable(function (Throwable $e) {
-            //
-        });
-    }
+    // Mendaftarkan callback untuk menangani pengecualian yang dapat dilaporkan.
+    $this->reportable(function (Throwable $e) {
+        // Di sini Anda dapat menambahkan logika untuk menangani pengecualian yang dilaporkan.
+        // Misalnya, Anda dapat mencatat pengecualian atau mengirimnya ke layanan pemantauan.
+    });
+}
 }
