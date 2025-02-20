@@ -1,22 +1,22 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers; // Mendefinisikan namespace untuk kelas PostController, yang mengorganisir kode dalam aplikasi dan menghindari konflik nama.
 
-use App\Models\Post;
+use App\Models\Post; // Mengimpor model Post, yang digunakan untuk berinteraksi dengan tabel 'posts' di database.
 
-class PostController extends Controller
+class PostController extends Controller // Mendeklarasikan kelas PostController yang memperluas kelas Controller.
 {    
     /**
      * index
      *
      * @return void
      */
-    public function index()
+    public function index() // Mendefinisikan metode index yang akan menangani permintaan untuk menampilkan semua posting.
     {
-        //get all posts from Model
+        // Mengambil semua posting dari model Post, diurutkan berdasarkan waktu terbaru.
         $posts = Post::latest()->get();
 
-        //passing posts to view
+        // Mengirimkan data posting ke tampilan 'posts' menggunakan compact untuk membuat array dari variabel.
         return view('posts', compact('posts'));
     }
 }

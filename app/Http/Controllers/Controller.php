@@ -14,6 +14,7 @@ use Illuminate\Routing\Controller as BaseController;
 
 // Mendeklarasikan kelas Controller yang memperluas kelas dasar BaseController.
 class Controller extends BaseController 
+
 {
     // Menggunakan trait untuk menambahkan fungsionalitas otorisasi, pengiriman pekerjaan, dan validasi ke dalam Controller ini.
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
