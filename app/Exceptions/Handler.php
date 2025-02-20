@@ -1,11 +1,17 @@
 <?php
 
-namespace App\Exceptions;
+// Mendefinisikan namespace untuk kelas Handler, yang mengorganisir kode dalam aplikasi dan menghindari konflik nama.
+namespace App\Exceptions; 
 
-use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
-use Throwable;
+// Mengimpor kelas dasar ExceptionHandler dari Laravel, yang menyediakan fungsionalitas penanganan pengecualian.
+use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler; 
 
-class Handler extends ExceptionHandler
+// Mengimpor interface Throwable, yang merupakan antarmuka dasar untuk semua pengecualian dan kesalahan di PHP.
+use Throwable; 
+
+// Mendeklarasikan kelas Handler yang memperluas kelas ExceptionHandler.
+class Handler extends ExceptionHandler 
+
 {
     /**
      * A list of exception types with their corresponding custom log levels.

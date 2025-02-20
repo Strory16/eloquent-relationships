@@ -19,6 +19,7 @@ class Kernel extends ConsoleKernel
  * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
  * @return void
  */
+
 protected function schedule(Schedule $schedule)
 {
     // Menjadwalkan perintah 'inspire' untuk dijalankan setiap jam.
@@ -30,6 +31,7 @@ protected function schedule(Schedule $schedule)
  *
  * @return void
  */
+
 protected function commands()
 {
     // Memuat semua perintah yang ada di direktori 'Commands'.
@@ -38,4 +40,5 @@ protected function commands()
     // Memuat rute-rute konsol yang didefinisikan dalam file 'console.php'.
     require base_path('routes/console.php');
 }
+
 }
