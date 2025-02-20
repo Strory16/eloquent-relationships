@@ -13,7 +13,8 @@ class PostController extends Controller
      *
      * @return void
      */
-    public function index() // Mendefinisikan metode index yang akan menangani permintaan untuk menampilkan semua posting.
+    // Mendefinisikan metode index yang akan menangani permintaan untuk menampilkan semua posting.
+    public function index() 
     {
         // Mengambil semua posting dari model Post, diurutkan berdasarkan waktu terbaru.
         $posts = Post::latest()->get();
