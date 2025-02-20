@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 // Mengimpor model Post, yang digunakan untuk berinteraksi dengan tabel 'posts' di database.
 use App\Models\Post; 
 
-class PostController extends Controller // Mendeklarasikan kelas PostController yang memperluas kelas Controller.
+// Mendeklarasikan kelas PostController yang memperluas kelas Controller.
+class PostController extends Controller 
 {    
     /**
      * index
