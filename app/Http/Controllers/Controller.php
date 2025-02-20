@@ -7,8 +7,10 @@ namespace App\Http\Controllers;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests; 
 // Mengimpor trait DispatchesJobs untuk memudahkan pengiriman pekerjaan (jobs) ke antrian.
 use Illuminate\Foundation\Bus\DispatchesJobs; 
-use Illuminate\Foundation\Validation\ValidatesRequests; // Mengimpor trait ValidatesRequests untuk menangani validasi permintaan (request).
-use Illuminate\Routing\Controller as BaseController; // Mengimpor kelas dasar Controller dari Laravel dan memberinya alias BaseController.
+// Mengimpor trait ValidatesRequests untuk menangani validasi permintaan (request).
+use Illuminate\Foundation\Validation\ValidatesRequests;
+// Mengimpor kelas dasar Controller dari Laravel dan memberinya alias BaseController. 
+use Illuminate\Routing\Controller as BaseController; 
 
 class Controller extends BaseController // Mendeklarasikan kelas Controller yang memperluas kelas dasar BaseController.
 {
