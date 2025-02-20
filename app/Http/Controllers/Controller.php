@@ -12,7 +12,8 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 // Mengimpor kelas dasar Controller dari Laravel dan memberinya alias BaseController. 
 use Illuminate\Routing\Controller as BaseController; 
 
-class Controller extends BaseController // Mendeklarasikan kelas Controller yang memperluas kelas dasar BaseController.
+// Mendeklarasikan kelas Controller yang memperluas kelas dasar BaseController.
+class Controller extends BaseController 
 {
     // Menggunakan trait untuk menambahkan fungsionalitas otorisasi, pengiriman pekerjaan, dan validasi ke dalam Controller ini.
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
