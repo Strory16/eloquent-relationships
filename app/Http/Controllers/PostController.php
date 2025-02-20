@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers; // Mendefinisikan namespace untuk kelas PostController, yang mengorganisir kode dalam aplikasi dan menghindari konflik nama.
+// Mendefinisikan namespace untuk kelas PostController, yang mengorganisir kode dalam aplikasi dan menghindari konflik nama.
 
+namespace App\Http\Controllers; 
 use App\Models\Post; // Mengimpor model Post, yang digunakan untuk berinteraksi dengan tabel 'posts' di database.
 
 class PostController extends Controller // Mendeklarasikan kelas PostController yang memperluas kelas Controller.
