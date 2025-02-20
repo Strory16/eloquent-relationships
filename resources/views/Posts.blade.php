@@ -12,7 +12,7 @@
         <div class="card mt-5">
             <div class="card-body">
                 <h3 class="text-center"><a href="https://kumparan.com/info-psikologi/mengenal-sifat-orang-pluviophile-dan-ciri-cirinya-20dboOSZMux">www.Pluviophile.com</a></h3>
-                <h5 class="text-center my-4">Laravel Eloquent Relationship : One To Many</h5>
+                <h5 class="text-center my-4">Quotes Hujan Yang Tenang</h5>
                 <table class="table table-bordered table-striped">
                     <thead>
                         <tr>
