@@ -12,7 +12,8 @@ class UserController extends Controller
      *
      * @return void
      */
-    public function index() // Mendefinisikan metode index untuk menangani permintaan menampilkan semua pengguna.
+    // Mendefinisikan metode index untuk menangani permintaan menampilkan semua pengguna.
+    public function index() 
     {
         //get users form Model
         $users = User::latest()->get();
